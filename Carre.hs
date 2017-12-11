@@ -7,6 +7,8 @@ import Math
 main :: IO ()
 main = hspec $ do
   describe "carre" $ do
+    it "returns squared number when given a input" $
+      carre (4) `shouldBe` 16
     it "returns squared number when given a negative input" $
       carre (-3) `shouldBe` 9
 
